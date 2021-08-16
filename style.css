@@ -98,42 +98,6 @@ h2{
     
    
 }
-.custom-shape-divider-bottom-1628991738 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1628991738 svg {
-    position: relative;
-    display: block;
-    width: calc(124% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-bottom-1628991738 .shape-fill {
-    fill: #FFFFFF;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1628991738 svg {
-        width: calc(132% + 1.3px);
-        height: 209px;
-    }
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-bottom-1628991738 svg {
-        width: calc(126% + 1.3px);
-        height: 70px;
-    }
-}
-
 
 /* menu */
 
@@ -233,10 +197,8 @@ h2{
   list-style: none;
 	text-align:center;
 	font-family: Luckiest Guy;
-	color:red;
 	font-size:2rem;
 	line-height:3.5em;
-  color:#369;
 	text-transform:none;
 	font-weight:bold;
     padding:2rem;
