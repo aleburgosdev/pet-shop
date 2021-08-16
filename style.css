@@ -46,7 +46,7 @@ max-width:100%;
 }
 h1{
     font-size: 6rem;
-    -webkit-text-stroke: .1px white;
+    
 }
 h2{
     font-size: 2rem;
@@ -305,6 +305,7 @@ color: rgb(9, 214, 241);
 }
 .pet-shop h1{
     text-transform: uppercase;
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,206,206,0);
 }
 .pet-shop h2{
     font-family: 'Indie Flower';
