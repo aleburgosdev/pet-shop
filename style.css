@@ -38,7 +38,7 @@ max-width:100%;
 }
 .f-principal{
     font-family: luckiest Guy;
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
 
 }
 .f-5{
@@ -69,6 +69,12 @@ h2{
     font-weight: 900;
     text-transform: uppercase;
     
+}
+@media(min-width:768px){
+    .btn{
+        display: inline-block;
+        padding: 1.2rem 2.5rem;
+    }
 }
 .btn-principal{
     background-color: rgba(9, 214, 241, 0.70);
@@ -243,6 +249,44 @@ h2{
 @media(min-width:768px){
     .menu-p{
         display: block;
+       
+    }
+    .menu-p a{
+        color: white;
+        text-decoration: none;
+        margin-right: 1rem;
+        position: relative;
+        z-index: 1;
+        text-shadow: 0 0 10px rgb(136, 136, 136), 2px 2px 2px rgba(206,206,206,0);
+    }
+    .menu-p a:nth-child(1){
+        background-color: white;
+        color:rgb(9, 214, 241) ;
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        transition: background-color .5s ease-in-out;
+        text-shadow: 0 0 0px;
+    }
+    .menu-p a:nth-child(1):hover{
+        background-color: rgb(9, 214, 241);
+        color:white;
+      
+    }
+    .bor-b::after{
+        position: absolute;
+        content: "";
+        border-bottom:2px solid rgb(9, 214, 241);
+        height: 1rem;
+        width: 0;
+        left: 50%;
+        top: 25px;
+        transition: all .4s ease 0s;
+        z-index: -1;
+    
+    }
+    .menu-p a:hover::after{
+        width: 100%;
+        left: 0;
     }
 }
 .barra{
@@ -255,6 +299,13 @@ h2{
     align-items: center;
     margin-bottom: 3rem;
 }
+@media(min-width:768px){
+    .barra{
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
 .logo{
  text-align: center;   
 }
@@ -262,6 +313,12 @@ h2{
     color: white;
     font-size: 4rem;
     transition: color .5s ease-in-out;
+}
+@media(min-width:768px){
+.logo i{
+font-size: 3rem;
+}
+
 }
 .logo i:hover{
     cursor: pointer;
@@ -278,6 +335,19 @@ color: rgb(9, 214, 241);
 }
 .envio{
   display: none;
+}
+@media(min-width:768px){
+    .envio{
+        display: block;
+        color: white;
+      } 
+      .envio i{
+        font-size: 3rem;
+      } 
+    
+      .logo p{
+          font-size: 1.6rem;
+      }
 }
 
 /* contenido mascotas */
@@ -297,6 +367,79 @@ color: rgb(9, 214, 241);
     flex-basis: 40%;
     flex-wrap: wrap;
 }
+.text-pet{
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes rubberBand {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes rubberBand {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+@media(min-width:768px){
+    .text-pet{
+        text-align: start;
+    }
+}
 
 .pet-shop{
     text-align: center;
@@ -306,6 +449,70 @@ color: rgb(9, 214, 241);
     text-transform: uppercase;
     text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,206,206,0);
 }
+h1{
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounceInLeft {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes bounceInLeft {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
 .pet-shop h2{
     font-family: 'Indie Flower';
     font-size: 2rem;
@@ -317,13 +524,31 @@ color: rgb(9, 214, 241);
     font-size: 1.8rem;
     line-height: 1.6;
 }
-
+@media(min-width:768px){
+    .p-principal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pet-shop{
+        flex-basis: 60%;
+        margin-top: -3rem;
+    }
+    .pet-shop h1{
+        font-size: 7rem;
+    }
+}
 /* Redes sociales */
 .cont-header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
    
+}
+@media(min-width:768px){
+.cont-header{
+
+}
 }
 .iconos-s{
     display: flex;
