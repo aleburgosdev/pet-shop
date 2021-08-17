@@ -42,7 +42,7 @@ max-width:100%;
 
 }
 .f-5{
-    font-size: 5.5rem;
+    font-size: 8rem;
 }
 h1{
     font-size: 6rem;
@@ -61,7 +61,7 @@ h2{
 .btn{
     display: block;
     text-align: center;
-    padding: 1.5rem 2rem;
+    padding: 1.8rem 2rem;
     text-decoration: none;
     border-radius: 3rem;
     font-size: 1.5rem;
@@ -261,6 +261,7 @@ h2{
 .logo i {
     color: white;
     font-size: 4rem;
+    transition: color .5s ease-in-out;
 }
 .logo i:hover{
     cursor: pointer;
@@ -284,9 +285,8 @@ color: rgb(9, 214, 241);
 .cont-pet{
     display: flex;
     justify-content: space-between;
-   
-    }
-    .img-pet{
+}
+.img-pet{
         flex-basis: 60%;
     }
 .text-pet{
@@ -294,14 +294,13 @@ color: rgb(9, 214, 241);
     text-align: center;
     padding-right: 1rem;
     text-transform: uppercase;
-    font-size: 1.6rem;
     flex-basis: 40%;
     flex-wrap: wrap;
 }
 
 .pet-shop{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .pet-shop h1{
     text-transform: uppercase;
@@ -317,4 +316,24 @@ color: rgb(9, 214, 241);
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 1.6;
+}
+
+/* Redes sociales */
+.cont-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.iconos-s{
+    display: flex;
+    justify-content:center ;
+    color: white;
+}
+.iconos-s i{
+    font-size: 3.5rem;
+    transition: color .5s ease-in-out;
+}
+.iconos-s i:hover{
+    color:rgb(9, 214, 241) ;
 }
