@@ -362,7 +362,7 @@ color: rgb(9, 214, 241);
 
 .cont-pet{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .v-movil{
     display: none;
@@ -481,7 +481,7 @@ color: rgb(9, 214, 241);
     } 
 @media(min-width:768px){
     .text-pet{
-       
+      margin-left: -10rem;
     }
 }
 
@@ -606,7 +606,7 @@ h1 {
 @media(min-width:768px){
     .p-principal{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
      align-items: center;
     
     }
