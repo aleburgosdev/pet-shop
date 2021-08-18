@@ -415,7 +415,8 @@ color: rgb(9, 214, 241);
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
