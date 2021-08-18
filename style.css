@@ -9,6 +9,7 @@ body{
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    height: 100vh;
 }
 @font-face {
     font-family: 'Luckiest Guy';
@@ -443,11 +444,13 @@ color: rgb(9, 214, 241);
 
 .pet-shop{
     text-align: center;
-    margin-top: 4rem;
+    padding: 2rem;
+  
 }
 .pet-shop h1{
     text-transform: uppercase;
     text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,206,206,0);
+    font-size: 14vw;
 }
 h1{
     -webkit-animation-name: bounceInLeft;
@@ -515,7 +518,7 @@ h1{
     } 
 .pet-shop h2{
     font-family: 'Indie Flower';
-    font-size: 2rem;
+    font-size: 6vw;
     text-transform: capitalize;
     font-style: italic;
 }
@@ -524,11 +527,15 @@ h1{
     font-size: 1.8rem;
     line-height: 1.6;
 }
+.p-principal{
+    height: 68%;
+}
 @media(min-width:768px){
     .p-principal{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    
     }
     .pet-shop{
         flex-basis: 60%;
@@ -543,6 +550,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
    
 }
 @media(min-width:768px){
