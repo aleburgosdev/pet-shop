@@ -302,7 +302,7 @@ h2{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 @media(min-width:768px){
     .barra{
@@ -488,6 +488,7 @@ color: rgb(9, 214, 241);
 .pet-shop{
     text-align: center;
     padding: 0rem 3rem ;
+    padding-top: 2rem;
   
 }
 
@@ -515,8 +516,8 @@ color: rgb(9, 214, 241);
 h1 {
     -webkit-animation-name: bounceInDown;
     animation-name: bounceInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     }
@@ -629,7 +630,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     height: 97%;
-    align-items: center;
+
    
 }
 @media(min-width:768px){
