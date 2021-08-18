@@ -9,7 +9,7 @@ body{
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
-    height: 99vh;
+    height: 97vh;
 
    
 }
@@ -364,10 +364,14 @@ color: rgb(9, 214, 241);
     display: flex;
     justify-content: space-between;
 }
+.v-movil{
+    display: none;
+}
 @media(min-height:812px){
     .cont-pet{
         margin-top: 4rem;
     }
+    
 }
 .img-pet{
         flex-basis: 50%;
@@ -380,12 +384,27 @@ color: rgb(9, 214, 241);
  text-align: center;
  
 }
+.text-pet h2{
+    font-size: 20vw;
+}
 @media(min-width:768px){
     .img-pet{
         flex-basis: 60%;
     }
     .text-pet{
         flex-basis: 38%;
+      
+    }
+    .text-pet h2{
+        font-size: 7vw;
+    }
+    .v-movil{
+        display: block;
+       
+    }
+    .qr{
+        height: 15rem;
+        margin-top: 2rem;
     }
 }
 
@@ -585,18 +604,19 @@ h1 {
     .p-principal{
         display: flex;
         justify-content: space-between;
-     
+     align-items: center;
     
     }
     .pet-shop{
         flex-basis: 60%;
         margin-top: -3rem;
+    
     }
     .pet-shop h1{
-        font-size: 6vw;
+        font-size: 5.5vw;
     }
     .pet-shop h2{
-        font-size: 2vw;
+        font-size: 1.6vw;
     }
 }
 /* Redes sociales */
@@ -624,4 +644,5 @@ h1 {
 }
 .iconos-s i:hover{
     color:rgb(9, 214, 241) ;
+    cursor: pointer;
 }
