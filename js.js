@@ -10,7 +10,15 @@ function toggleMenu (event) {
 // event
 menu.addEventListener('click', toggleMenu, false);
 
-
+var nav = document.getElementById('nav');
+window.onscroll = function() {
+  if (window.pageYOffset > 100) {
+    nav.style.background = "rgba(0, 0, 0, 0.30)";
+  } else {
+    nav.style.background = "transparent";
+    nav.style.boxShadow = "none";
+  }
+}
 
 //Solución con jQUery
 /*$(document).ready(function(){

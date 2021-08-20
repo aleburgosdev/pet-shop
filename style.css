@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
    scroll-behavior: smooth;
+  
 }
   *,*:before, *:after {
     box-sizing: inherit;
@@ -14,7 +15,6 @@ body{
     height: 97vh;
     background-color: #f8f5e9;
 
-   
 }
 @font-face {
     font-family: 'Luckiest Guy';
@@ -278,6 +278,7 @@ h3{
 @media(min-width:768px){
     .menu-p{
         display: block;
+    
        
     }
     .menu-p a{
@@ -333,8 +334,16 @@ h3{
 @media(min-width:768px){
     .barra{
         justify-content: space-between;
-        text-align: center;
         margin: 0 auto;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        left: 10%;
+        border-radius: 20rem;
+        z-index: 99999;
+    }
+    .barra-vacia{
+     padding: 7rem;
     }
 }
 .logo{
@@ -756,5 +765,6 @@ main:hover .g-p{
     .g-p{
         left: 30%;
         width: 30%;
+    
     }
 }
