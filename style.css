@@ -404,14 +404,13 @@ color: rgb(9, 214, 241);
     }
 .text-pet{
     color: white;
-    padding-right: 1rem;
     text-transform: uppercase;
- flex-basis:50%;
+ flex-basis:45%;
  text-align: center;
  
 }
 .text-pet h2{
-    font-size: 20vw;
+    font-size: 18vw;
 }
 @media(min-width:768px){
     .img-pet{
