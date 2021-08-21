@@ -239,7 +239,7 @@ h3{
 	line-height:3.5em;
 	text-transform:none;
 	font-weight:bold;
-    padding:2rem;
+    padding:0.7rem;
     letter-spacing: .3rem;
     
 }
@@ -342,7 +342,7 @@ h3{
         text-align: center;
         top: 0;
         left: 7%;
-        border-radius: 20rem;
+        border-radius: 2rem;
         z-index: 99999;
     }
     .barra-vacia{
