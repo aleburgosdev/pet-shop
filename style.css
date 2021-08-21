@@ -115,14 +115,17 @@ h3{
 
 .c-titulo{
     text-align: center;
-    margin: 2rem 0rem;
+    margin: 2rem 0 1rem 0;
     font-size: 12vw;
 
 }
 @media(min-width:768px){
 .c-titulo{
-    font-size:5vw ;
+    font-size:4vw ;
 }
+}
+.centrar{
+    text-align: center;
 }
 /* encabezado  */
 .fondo{
@@ -338,7 +341,7 @@ h3{
         position: fixed;
         text-align: center;
         top: 0;
-        left: 10%;
+        left: 7%;
         border-radius: 20rem;
         z-index: 99999;
     }
@@ -767,4 +770,72 @@ main:hover .g-p{
         width: 30%;
     
     }
+}
+
+/* tienda */
+
+.banner{
+    position: relative;
+    height: 40rem;
+}
+.banner::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    background-image: url(./img/baner-1.png);
+    background-size:cover;
+   background-position:right;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   filter:brightness(0.6)
+}
+.titulo{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h2{
+    color: rgb(9, 214, 241);
+    text-transform: uppercase;
+    font-size: 12vw;
+    text-shadow: 0 0 10px rgb(216, 215, 215), 2px 2px 2px rgba(206,206,206,0);
+    margin: 1rem 0;
+}
+.titulo i{
+    font-size: 10vw;
+    color: white;
+    padding: 0 2rem;
+   transition: color .5s ease;
+}
+.titulo i:hover {
+color:#ff9600  ;
+}
+.texto-t{
+    color: white;
+    margin: 0 0 1rem 0;
+    font-size: 4.5VW;
+}
+@media(min-width:768px){
+    .titulo h2{
+        font-size: 4vw;
+    }
+    .titulo i{
+        font-size: 3vw;
+    }
+    .texto-t{
+        font-size: 1.2vw;
+    }
+}
+/* productos */
+
+.logo-h2 img{
+    width: 5rem;
+    
 }
