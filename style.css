@@ -75,6 +75,9 @@ h3{
 .c-c{
     color: rgb(9, 214, 241);
 }
+.c-s{
+    color: #ff9600 ;
+}
 .btn{
     display: block;
     text-align: center;
@@ -112,7 +115,28 @@ h3{
     transition: background-color .9s ease .2s ;
 
 }
-
+.btn-ver-mas{
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+   border: solid 2px #ff9600 ;
+   padding: 1rem 2rem;
+   width: 50vw;
+   margin: 0 auto;
+   font-size: 2rem;
+   transition:  background-color 1s ease, border-radius 1s ease ;
+}
+.btn-ver-mas:hover{
+  
+    background-color: #ff9600;
+    border-radius: 10px;
+}
+@media(min-width:768px){
+    .btn-ver-mas{
+        width: 18vw;
+    }
+}
 .c-titulo{
     text-align: center;
     margin: 2rem 0 1rem 0;
@@ -167,7 +191,7 @@ h3{
     }
 }
 ._layer{
-	background:white;
+	background:rgb(233, 233, 233);
 	margin-bottom:4px;
 	border-radius:2px;
 	width:30px;
@@ -728,10 +752,7 @@ h1 {
     }
 }*/
 .g-p{
-animation-name: gatoperro;
-animation-duration: 2s;
-animation-iteration-count: 3;
-animation-fill-mode: both;
+
 transform: translateY(100%);
 transition: transform 1.5s ease;
 
@@ -838,4 +859,146 @@ color:#ff9600  ;
 .logo-h2 img{
     width: 5rem;
     
+}
+.c-productos{
+ margin-bottom: 2rem;  
+}
+.productos{
+height: 100%;
+padding: 2rem 1rem;
+}
+.conte-productos{
+    background-color: white;
+    padding: .5rem;
+    margin: 1rem 0;
+   height: 70%;
+   position: relative;
+   overflow: hidden;
+   box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.10);
+   -webkit-box-shadow: 3px 4px 21px 5px rgba(0,0,0,0.48);
+   -moz-box-shadow: 3px 4px 21px 5px rgba(0,0,0,0.48);
+transition: border 1s ease, transform 1s ease;
+}
+@media(min-width:768px){
+    .productos{
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(4, 24%);
+    }
+    .conte-productos{
+        height: 90%;
+        margin-bottom: 2rem;
+    }
+}
+.conte-productos:hover{
+
+    transform: scale(1.2);
+}
+.ver-mas{
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 100%;
+    position: absolute;
+    top: 0;
+   left: 0;
+   width: 100%;
+transform: translateY(100%);
+  transition: transform 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conte-productos:hover .ver-mas{
+transform: translateZ(0);
+}
+.conte-productos img{
+
+    transition: filter .6s ease, transform 1s ease;
+}
+.conte-productos:hover img{
+   
+    filter: grayscale(1);
+}
+
+/* cat */
+.cat{
+    width: 8.5rem!important;
+}
+.patas{
+    display: none;
+}
+@media(min-width:768px){
+    .c-patas{
+        position: relative;
+       overflow: hidden;
+    }
+    .patas{
+     display: block;
+        height: 12rem;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        transform: translateY(100%);
+        transition: transform 1s ease;
+        display: flex;
+        justify-content: space-around;
+    }
+    .c-patas:hover .patas{
+        transform: translateY(0);
+    }
+}
+
+.contacto-banner{
+    position: relative;
+    height: 40rem;
+}
+.contacto-banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/banner-contacto.png);
+    background-position: initial;
+    background-size: cover;
+   background-attachment: fixed;
+    filter:brightness(0.6)
+}
+.contacto{
+    position: relative;
+}
+.contacto h2{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    font-size: 12vw;
+    text-shadow: 0 0 10px rgb(216 215 215), 2px 2px 2px rgb(206 206 206 / 0%);
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contacto i{
+    font-size: 10vw;
+    color: white;
+    padding: 0 2rem;
+   transition: color .5s ease;
+}
+.contacto i:hover{
+    color:#ff9600  ;
+}
+@media(min-width:768px){
+    .contacto h2{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    font-size: 4vw;
+
+    }
+    .contacto i{
+        font-size: 3vw;
+    }
 }
